@@ -1,9 +1,11 @@
+  require("dotenv").config();
+
 var express = require('express'),
   app = express(),
-  environment = require("dotenv").config(),
   port = process.env.PORT || 3000;
 mongoose = require('mongoose'),
   Users = require('./api/models/usersListModel'), //created model loading here
+  Sessions = require('./api/models/sessionsListModel'),
   bodyParser = require('body-parser');
 
 // mongoose instance connection url connection
@@ -19,7 +21,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-var routes = require('./api/routes/usersListRoutes'); //importing route
+var routes = require('./api/routes/routes'); //importing route
 routes(app); //register the route
 
 app.listen(port);
