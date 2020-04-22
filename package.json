@@ -1,0 +1,20 @@
+{
+  "name": "check-in",
+  "version": "1.0.0",
+  "description": "A very basic backend for checking in users of a gym or event. Smartwaiver, while a wonderful tool has several issues. The goal of this project is to build an open source simple tool for keeping track of attendence and waiver signing.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjamin Cross",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10"
+  }
+}
